@@ -103,7 +103,7 @@ if(isset($_POST['signin'])){
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>  
-    <body>  
+    <body bgcolor=lightgrey;>  
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
@@ -150,8 +150,17 @@ if(isset($_POST['signin'])){
     </div>
    </div>
   </div>
+  <div class="fixed-footer" style="height:50px;width:1300px; background-color:lightGrey;">
+        <div class="container"><center><b>Copyright &copy; 2020 Sunaina</b></center></div>        
+    </div>
     </body>  
 </html>
+<style>
+body{
+	
+	background-color:lightgrey;
+}
+</style>
 <script>
 $(document).ready(function () {
    $("#txtConfirmPassword").keyup(checkPasswordMatch);

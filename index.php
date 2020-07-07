@@ -46,13 +46,37 @@ h1, h2, h3, h4, h5, h6 {
 	</div>
 	<div class="rightDiv">
 	<br><br>
-		<img src="images/3.jpg" height=348px width=300px; style="margin-left:190px;">
+		<img src="images/3.jpg" height=420px width=300px; style="margin-left:190px;">
 	</div>
 </div>
 </div>
 
 <h2><center><b>What To Expect Next:</b></center></h2>
-
+<ul>
+				<li>
+					<img src="images/1.jpg" height=250px; width=250px; style="border-radius:20px;">
+					<br>
+					<br>
+					<p class="code">Chat with anyone you want</p>
+					
+					</li>
+				<li>
+					<img src="images/2.jpg" class="secondimage" height=250px; width=250px;style="border-radius:20px;">
+					<br>
+					<br>
+					<p class="code">check your friends online/offline status</p>
+</li>
+				<li>
+					<img src="images/3.jpg" height=250px; width=250px; style="border-radius:20px;">
+					<br>
+					<br>
+					<p class="code">Feel Connected</p>
+					</li>
+			</ul>
+			
+			<div class="fixed-footer" style="height:50px;width:1300px; background-color:lightGrey;">
+        <div class="container"><center><b>Copyright &copy; 2020 Sunaina</b></center></div>        
+    </div>
 </body>
 </html>
 <style>
@@ -77,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 			}
 .start{
 	 background-image: url('bgs/blackmamba.png');
-	 height:400px;
+	 height:470px;
 	 width:1270px;
 }
 .button-fancy {
@@ -90,10 +114,28 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1em;
 	display: block;
 	margin-top:30px;
-	margin-left:200px;
-	width: 10%;
+	margin-left:250px;
+	width: 15%;
 	border-radius: 5px;
 	box-shadow: 3px 3px 8px 0 #000; /* h-offset v-offset blur spread color */
+}
+li{
+	margin-left:100px;
+	display:inline-block;
+}
+.code{
+	font-weight:bold;
+	font-size:20px;
+	color:grey;
+}
+.outerdiv {
+  animation: mymove 5s 1;
+  animation-delay: -2s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
 }
 </style>
 

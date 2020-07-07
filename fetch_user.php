@@ -6,7 +6,7 @@ $stmt=$conn->prepare($query);
 $stmt->execute();
 $result=$stmt->fetchAll();
 $output='
-	<table class="table table-bordered table-striped">
+	<table class="table table-bordered " style="background-color:white;border:2px;">
 	<tr>
 		<td>Username</td>
 		<td>Status</td>
@@ -20,20 +20,20 @@ foreach($result as $row)
 	 $current_timestamp = date('Y-m-d H:i:s', $current_timestamp);
 	 $user_last_activity = fetch_user_last_activity($row['user_id'], $conn);
 	 
-	 echo 'time'.$current_timestamp;
+	
 	 if($user_last_activity > $current_timestamp)
 	 {
 	  $status = '<span class="label label-success">Online</span>';
 	 }
 	 else
 	 {
-	  $status = '<span class="label label-danger">Offline</span>';
+	    $status = '<span class="label label-danger">Offline</span>';
 	 }
 	 
 	$output .='
 		<tr>
-			<td>'.$row['username'].'</td>
-			<td></td>
+			<td>'.$row['username'].' '.count_unseen_message($row['user_id'],$_SESSION['user_id'],$conn).'</td>
+			<td>'.$status.' </td>
 			<td><button type="button" class="btn btn-info btn-xs start_chat" data-touserid="'.$row['user_id'].'" data-tousername="'.$row['username'].'">Start Chat</button></td>
 		</tr>
 		';
