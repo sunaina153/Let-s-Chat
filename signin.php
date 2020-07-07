@@ -107,7 +107,7 @@ if(isset($_POST['signin'])){
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button" style="font-size:20px;">Let's Chat</a>
+    <a href="index.php" class="w3-bar-item w3-button" style="font-size:20px;">Let's Chat</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="signin.php" class="w3-bar-item w3-button">Sign In</a>
